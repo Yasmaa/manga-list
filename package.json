@@ -3,8 +3,6 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "server-prod": "node server.js",
-    "server": "nodemon server.js",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
