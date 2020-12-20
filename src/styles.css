@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+table, tr, th, td {
+  border: solid 1px black;
+  }s
+  
+  th {
+  color: blue;
+  width: 20%;
+  }
+  
+  td {
+  text-align: center;
+  }
