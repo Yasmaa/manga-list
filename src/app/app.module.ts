@@ -3,6 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { FormsModule } from '@angular/forms';
+import { AngularFireMessagingModule } from '@angular/fire/messaging';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { AuthService } from './service/auth.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +18,18 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFireMessagingModule,
+    AngularFireStorageModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    AngularFirestore,
+    AuthService
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
