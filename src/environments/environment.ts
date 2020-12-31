@@ -5,12 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyBTxiV0030HFVexBqRZPtq4-pyRyjKNE3g",
-    authDomain: "baas-tp.firebaseapp.com",
-    projectId: "baas-tp",
-    storageBucket: "baas-tp.appspot.com",
-    messagingSenderId: "948891564769",
-    appId: "1:948891564769:web:b66b9fe59d704a143655a0"
+    apiKey: "AIzaSyCFdSbrGAdsmz6ue17ONjE-XY2j4hP02Dg",
+    authDomain: "tp-cours-b4faf.firebaseapp.com",
+    projectId: "tp-cours-b4faf",
+    storageBucket: "tp-cours-b4faf.appspot.com",
+    messagingSenderId: "474797934327",
+    appId: "1:474797934327:web:b64ff3c4eb6ed3dad3b5f2",
+    measurementId: "G-2PKPKZ5M2E"
+
   }
   };
 
